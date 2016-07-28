@@ -56,13 +56,13 @@ namespace DotNetKoans.CSharp
         [Koan(1)]
         public void SubclassesHaveTheParentAsAnAncestor()
         {
-            Assert.True(typeof(FillMeIn).IsAssignableFrom(typeof(Chihuahua)));
+            Assert.True(typeof(Dog).IsAssignableFrom(typeof(Chihuahua)));
         }
 
         [Koan(2)]
         public void AllClassesUltimatelyInheritFromAnObject()
         {
-            Assert.True(typeof(FillMeIn).IsAssignableFrom(typeof(Chihuahua)));
+            Assert.True(typeof(object).IsAssignableFrom(typeof(Chihuahua)));
         }
 
         [Koan(3)]
